@@ -25,7 +25,7 @@
                   <div class="row">
 
                     <div class="form-group col-6">
-                      <label for="name">Nama Lengkap</label>
+                      <label for="name">Username</label>
                       <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                         <div class="invalid-feedback">
                             @error('name')
@@ -38,10 +38,10 @@
                     
                     <div class="form-group col-6">
                       <label for="role user">Role User</label>
-                      <select class="form-control selectric">
-                        <option>Admin / Staff P2MB & Humas</option>
-                        <option>Dewan Juri</option>
-                        <option>Kepala Biro P2MB & Humas</option>
+                      <select class="form-control selectric" name="role_user">
+                        <option value="Admin">Admin / Staff P2MB & Humas</option>
+                        <option value="Juri">Dewan Juri</option>
+                        <option value="Kepala">Kepala Biro P2MB & Humas</option>
                       </select>
                     </div>
 
